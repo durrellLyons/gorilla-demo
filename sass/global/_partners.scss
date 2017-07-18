@@ -1,0 +1,97 @@
+.our_partner {
+    &:after {
+        @include clearfix();
+        @include clearfix-after();
+    }
+    
+    @media screen and (min-width: $query__small) {
+        width: 90%;
+        padding: 0 5%;
+    }
+    
+    .first {
+        .second {
+            @media screen and (min-width: $query__medium) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.our_partners_list {
+    
+    .partners_list_div {
+        position: relative;
+        text-align: center;
+        
+        @media screen and (min-width: $query__small) {
+            width: 100%;
+            float: none;
+            padding: 3% 0;
+        }
+        
+        @media screen and (min-width: $query__large) {
+            width: 40%;
+            float: left;
+            padding: 3% 5%;
+        }
+        
+        .partners_list_img_div {
+            text-align: center;
+            height: 10em;
+            position: relative;
+            width: 85%;
+            margin: 0 auto;
+            
+            img {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
+        
+        article {
+            margin: 1em auto;
+            width: 95%;
+        }
+        
+        button {
+            padding: 1em;
+            background-color: $purple;
+            border: none;
+            
+            @media screen and (min-width: $query__small) {
+                width: 80%;
+            }
+            
+            @media screen and (min-width: $query__medium) {
+                width: 65%;
+            }
+        }
+        
+        &:last-child {
+            @media screen and (min-width: $query__small) {
+                margin-top: 5em;
+            }
+            
+            @media screen and (min-width: $query__large) {
+                margin-top: 0;
+            }
+            
+            .partners_list_img_div {
+                @media screen and (min-width: $query__small) {
+                    img {
+                        width: 100%;
+                    }
+                }
+                @media screen and (min-width: $query__large) {
+                    img {
+                        width: 65%;
+                        left: 20%;
+                    }
+                }
+            }
+        }
+    }
+}

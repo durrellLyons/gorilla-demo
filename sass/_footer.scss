@@ -1,0 +1,266 @@
+.footer {
+	.content {
+		position: relative;
+		.column {
+			@media screen and (min-width: $query__medium) {
+				width: 40%;
+				padding: 5%;
+			}
+			
+			@media screen and (min-width: $query__large) {
+				width: 15%;
+				padding: 5%;
+			}
+			.social_media_menu li {
+				display: inline;
+				
+				img {
+					width: 20%;
+				}
+			}
+		}
+	}
+}
+
+.footer-nav-title {
+	color: $black;
+	font-family: $poppins;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: -.05em;
+}
+
+.footer-nav-bar {
+	height: 3px;
+	width: 65px;
+	margin: 0.5em 0 1.5em;
+	
+	&.blue {
+		background-color: $blue;
+	}
+	
+	&.purple { 
+                background-color: $purple;
+	}
+	
+	&.pink {
+		background-color: $pink;
+	}
+	
+	&.darkblue {
+		background-color: $darkblue;
+	}
+}
+
+footer ul li a {
+	color: $black;
+	font-family: $poppins;
+	font-size: 0.8em;
+	font-weight: 300;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.footer-form {
+	background-color: $blue;
+	@media screen and (min-width: $query__small) {
+		padding: 1em 0em;
+		width: 100%;
+		margin: 0em auto 5em;
+	}
+	@media screen and (min-width: $query__medium) {
+		width: 80%;
+		padding: 1em 10%;
+	}
+	@media screen and (min-width: $query__large) {
+		padding: 1em 4em 3.5em;
+	}
+	
+	form {
+		@media screen and (min-width: $query__small) {
+			padding: 0em 0.5em;
+		}
+		
+		@media screen and (min-width: $query__medium) {
+			
+		}
+		position: relative;
+
+		h4 {
+			color: #fff;
+		}
+		
+		.text-input-div {
+			height: 8em;
+			@media screen and (min-width: $query__small) {
+				width: 100%;
+			}
+			
+			@media screen and (min-width: $query__medium) {
+				width: 100%;
+				float: left;
+			}
+		
+			.text-inputs {
+				float:left;
+				
+				@media screen and (min-width: $query__small) {
+					width: 100%;
+					padding: 0.5em 0;
+				}
+				
+				@media screen and (min-width: $query__medium) {
+					width: 49%;
+					padding-left: 1%;
+				}
+				
+				
+				input {
+					background-color: #fff;
+					border: none;
+					width: 100%;
+					height: 2em;
+					@media screen and (min-width: $query__small){
+						margin-top: 0.25em;
+					}
+					
+					@media screen and (min-width: $query__medium) {
+						margin: 0;
+					}
+				}
+			}
+			&:after {
+				content: '';
+				display: table;
+				clear: both;
+			}
+		}
+		
+		.textarea-div {
+			height: 8em;
+			overflow: hidden;
+			@media screen and (min-width: $query__small) {
+				width: 100%;
+			}
+			
+			@media screen and (min-width: $query__medium) {
+				width: 99%;
+				float: left;
+				padding: 0.5em 0.5em;
+			}
+			
+			textarea {
+				overflow: auto;
+				width: 95%;
+				height: 100%;
+				
+				@media screen and (min-width: $query__small) {
+					margin-top: 0.25em;
+					width: 100%;
+				}
+			}
+		}
+		
+		label {
+			color: #fff;
+		}
+		
+		.button {
+			padding: 0.5em 2em;
+			@media screen and (min-width: $query__small) {
+				margin: 2em auto;
+				width: 100%;
+			}
+			@media screen and (min-width: $query__large) {
+				position: absolute;
+				bottom: -6.5em;
+				position: absolute;
+				right: 0.5em;
+				width: 15em;
+			}
+		}
+		
+		&:after {
+			content:'';
+			display:table;
+			clear: both;
+		}
+	}
+}
+
+.gorilla-icon-div {
+	@media screen and (min-width: $query__small) {
+		overflow: hidden;
+		position: relative;
+		height: 17em;
+		margin: 0;
+		padding: 0;
+	}
+	
+	@media screen and (min-width: $query__large) {
+		overflow:visible;
+		height: 10em;
+	}
+	.gorilla-icon {
+		position: absolute;
+		@media screen and (min-width: $query__small) {
+			width: 100%;
+			right: -5em;
+		}
+		@media screen and (min-width: $query__medium) {
+			width: 60%;
+			right: -4.5em;
+		}
+		
+		@media screen and (min-width: $query__large) {
+			width: 22%;
+			right: 0.5em;
+		}
+	}
+}
+
+
+.disclaimer {
+	color: $grey;
+	font-family: $open;
+	font-size: 11px;
+	font-weight: 300;
+	letter-spacing: .25em;
+	line-height: 35px;
+	a {
+		color: $grey;
+		font-weight: 600; 
+                &:hover {
+			color: $blue;
+		}
+	}
+	
+	@media screen and (min-width: $query__small) {
+		&.mobile {
+			padding: 1em;
+			font-size: 0.75em;
+			text-align: center;
+		}
+		&.desktop {
+			display: none;
+		}
+	}
+	
+	@media screen and (min-width: $query__medium) {
+		&.mobile {
+			display: none;
+		}
+		
+		&.desktop {
+			display: block;
+			letter-spacing: .27em;
+		}
+	}
+	
+	@media screen and (min-width: $query__large) {
+		&.desktop {
+			letter-spacing: .25;
+			font-size: 0.5em;
+		}
+	}
+}

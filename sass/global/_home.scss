@@ -1,0 +1,494 @@
+/****  Home  ****/
+
+.simplified {
+    background: url('img/banner_bg.jpg') top no-repeat fixed;
+    @media screen and (min-width: $query__medium) {
+        background-size: 100% 100vh;        
+    }
+    
+    @media screen and (min-width: $query__large) {
+        background-size: 100vw;
+    }
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+    &.page_404 {
+        h1 {
+            color: #fff;
+            font-size: 10em;
+            text-align: center;
+            font-weight: 600;
+            margin: 0.25em 0 0.25em 0
+        }
+        h3 {
+            text-align: center;
+        }
+    }
+    
+    .content {
+        
+        padding: 5em;
+        h2, h3 {
+            color: #fff;
+            margin-bottom: 1em;
+        }
+        
+        @media screen and (min-width: $query__small) {
+            width: 90%;
+            padding: 20% 5% 25%;
+            h3 {
+                font-size: 1.3em;
+            }
+        }
+        
+        @media screen and (min-width: $query__medium) {
+            width: 80%;
+        }
+        
+        @media screen and (min-width: $query__large) {
+            padding: 5em;
+            h3 {
+                font-size: 25px;
+            }
+        }
+        
+        .cta {
+            background-color: $purple;
+            color: $grey;
+            font-family: $poppins;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            padding: 0.25em 0;
+            height: 1.85em;
+            position: relative;
+            float: none;
+            
+            @media screen and (min-width: $query__small) {
+                    width: 100%;
+                    right: 0;
+            }
+            
+            @media screen and (min-width: $query__medium) {
+                    width: 16em;
+            }
+        }
+    }
+} /**** .simplified ****/
+
+
+.solutionsIcons {
+    padding: 3em 0 5em;
+    width: 100%;
+    position: relative;
+    
+    .column {
+        @media screen and (min-width: $query__small) {
+            width: 90%;
+            padding: 15% 4%;
+            margin: 0 auto;
+        }
+        
+        @media screen and (min-width: $query__medium) {
+            width: 40%;
+            padding: 15% 4.5%;
+        }
+        
+        @media screen and (min-width: $query__large) {
+            width: 23%;
+            padding: 2.5em 0.25em 3em;
+            height: 6.5em;
+        }
+        text-align: center;
+        position: relative;
+        z-index: 100;
+        
+        img {
+            width: 50%;
+            vertical-align: middle;
+        }
+        
+        .helper {
+            @include helper();
+        }
+        
+        &.pos-col:hover {
+            border: 3px solid $blue;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .pos-col {
+            @media screen and (min-width: $query__large) {
+                figcaption {
+                    margin-top: 2em;
+                }
+            }
+        }
+        
+        &.wfm-col:hover {
+            border: 3px solid $purple;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        
+        &.foi-col:hover {
+            border: 3px solid $darkblue;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        
+        &.ms-col:hover {
+            border: 3px solid $pink;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        
+        figcaption {
+            position: absolute;
+            margin: 1.5em auto 0;
+            background-color: #fff;
+            font-weight: bolder;
+        
+            @media screen and (min-width: $query__small) {
+                width: 100%;
+                left: 0;
+                bottom: 1em;
+                font-size: 1.5em;
+            }
+            
+            @media screen and (min-width: $query__medium) {
+                font-size: 1.2em;
+            }
+            
+            @media screen and (min-width: $query__large) {
+                width: 70%;
+                left: 17%;
+                font-size: 0.85em;
+                bottom: -1em;
+            }
+        }
+    }
+} /*** solutionsIcons ***/
+
+.gorilla_technologies {
+    background-image: url('img/about_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    background-size: 100%;
+    padding: 5em 0;
+    @media screen and (min-width: $query__small) {
+        background-size: cover;
+        padding: 4em 1em 6em;
+    }
+    
+    .content {
+        
+        h2 {
+            color: #fff;
+            
+            @media screen and (min-width: $query__medium) {
+                font-size: 2em;
+            }
+            
+            @media screen and (min-width: $query__large) {
+                font-size: 3em;
+            }
+        }
+        
+        p {
+            color: #fff;
+            @media screen and (min-width: $query__small) {
+                text-align: left;
+            }
+        }
+        
+        button {
+            @media screen and (min-width: $query__small) {
+                width: 100%;
+                padding: 1em 3em;
+            }
+            
+            @media screen and (min-width: $query__medium) {
+                width: 50%;
+                padding: 1em;
+            }
+            
+            @media screen and (min-width: $query__large) {
+                padding: 1em 3em;
+            }
+        }
+        
+        @media screen and (min-width: $query__medium) {
+            .second {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (min-width: $query__large) {
+            .second {
+                width: 80%;
+            }
+        }
+    }
+} /*** gorilla_technologies ***/
+
+.industries_served {
+    width: 100%;
+    position: relative;
+    &:after {
+        @include clearfix();
+        @include clearfix-after();
+    }
+    
+    .title {
+        @media screen and (min-width: $query__small) {
+            width: 95%;
+            padding: 0 0 0 4%;
+        }
+        
+        @media screen and (min-width: $query__medium) {
+            width: 50%;
+        }
+        
+        @media screen and (min-width: $query__large) {
+            padding: 12% 9%;
+            width: 14%;
+            float: left;
+            text-align: left;
+        }
+    }
+    
+    .industries_served_img_div {
+        @media screen and (min-width: $query__small) {
+            width: 100%;
+            padding: 0;
+        }
+        
+        @media screen and (min-width: $query__large) {
+            float: right;
+            width: 67.8%;
+            &:after {
+                @include clearfix();
+                @include clearfix-after();
+            }
+        }
+    }
+    
+    .industries_served_img {
+        float: right;
+        
+        @media screen and (min-width: $query__small) {
+            width: 100%;
+            margin-top: -4px;
+        }
+        
+        @media screen and (min-width: $query__medium) {
+            width: 50%;
+            float: left;
+        }
+        
+        @media screen and (min-width: $query__large) {
+            width: 33%;
+            margin-top: 0;
+        }
+        text-align: center;
+        img {
+            width: 100%;
+        }
+        position: relative;
+        figcaption {
+            position: absolute;
+            top: 30%;
+            left: 0%;
+            width: 100%;
+            margin: 0 auto;
+            h3 {
+                font-weight: 400;
+            }
+        }
+        
+        @media screen and (min-width: $query__large){
+            &.second-row {
+                margin-top: -4px;
+            }
+        }
+    }
+} /*** Industries Served ***/
+
+.get_started {
+    position: relative;
+    
+    @media screen and (min-width: $query__small) {
+        padding: 5%;
+    }
+    
+    @media screen and (min-width: $query__large) {
+        height: 39em;
+        padding: 0;
+    }
+    &:after {
+        @include clearfix();
+        @include clearfix-after();
+    }
+    
+    .get_started_img_div {
+        @media screen and (min-width: $query__small) {
+            position: relative;
+            top: 3em;
+            width: 100%;
+            left: -5.5em;
+        }
+        
+        @media screen and (min-width: $query__medium) {
+            position: absolute;
+            width: 50%;
+            left: -22%;
+        }
+        
+        @media screen and (min-width: $query__large) {
+            position: absolute;
+            width: 39%;
+            left: -17%;
+            top: -24%;
+            img {
+                width: 100%;
+            }
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+    }
+    
+    .get_started_content_div {
+        @media screen and (min-width: $query__small) {
+            width: 100%;
+        }
+        
+        @media screen and (min-width: $query__medium) {
+            width: 75%;
+            float: left;
+            margin: 14em auto;
+            left: 23%;
+            position: relative;
+        }
+                
+        @media screen and (min-width: $query__large){
+            width: 70%;
+            position: relative;
+            left: 20%;
+            top: 25%;
+            margin: 0;
+        }
+        
+        h1 {
+            color: #000;
+            text-align: center;
+            width: 100%;
+            
+            @media screen and (min-width: $query__small) {
+                font-size: 4em;
+                line-height: 1.5em;
+            }
+            
+            @media screen and (min-width: $query__medium) {
+                font-size: 3.3em;
+                line-height: 1em;
+            }
+            
+            @media screen and (min-width: $query__large) {
+                font-size: 53px;
+            }
+        }
+        
+        .phone {
+            color: $blue;
+            @media screen and (min-width: $query__small) {
+                &.mobile {
+                    display: block;
+                    line-height: 1em;
+                    margin-top: -0.25em;
+                }
+                
+                &.tablet {
+                    display: none;
+                }
+            }
+            
+            @media screen and (min-width: $query__medium) {
+                &.mobile {
+                    display: none;
+                }
+                
+                &.tablet {
+                    display: block;
+                    line-height: 0px;
+                    font-size: 3em;
+                }
+            }
+            
+            @media screen and (min-width: $query__large) {
+                font-size: 70px;
+                letter-spacing: 1px;
+            }
+        }
+        
+    } /*** get_started_content_div ***/
+    
+    .partners {
+        position: relative;
+        top: 40%;
+        
+        @media screen and (min-width: $query__small){
+            left: 0;
+            width: 100%;
+            margin: 5em auto 4em;
+        }
+        
+        @media screen and (min-width: $query__large){
+            left: 10%;
+            width: 80%;
+            margin: 0;
+        }
+        &:after {
+            @include clearfix();
+            @include clearfix-after();
+        }
+        
+        .partners_img {
+            float: left;
+            height: 5em;
+            @media screen and (min-width: $query__small){
+                width: 36%;
+                padding: 0 1em;
+            }
+            
+            @media screen and (min-width: $query__medium) {
+                width: 27%;
+                padding: 1em;
+            }
+            
+            @media screen and (min-width: $query__large) {
+                width: 10%;
+                padding: 0 2em;
+            }
+            .helper {
+                @include helper();
+            }
+            
+            img {
+                width: 90%;
+                vertical-align: bottom;
+            }
+            &:last-child {
+                margin-top: 1em;
+            }
+        }
+    }
+} /*** get_started ***/
+
+/*****  End Home  *****/

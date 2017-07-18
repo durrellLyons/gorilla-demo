@@ -1,0 +1,167 @@
+.contact_icon_div {
+    text-align: center;
+    position: relative;
+    
+    @media screen and (min-width: $query__small) {
+        width: 90%;
+        height: auto;
+        padding: 10% 5%;
+        margin: 1em auto;
+    }
+    
+    @media screen and (min-width: $query__medium) {
+        width: 40%;
+        float: left;
+        padding: 5%;
+        height: 11em;
+    }
+
+    .contact_icon_img_div {
+        width: 100%;
+        @media screen and (min-width: $query__small) {
+            margin: 1em auto;
+        }
+        
+        @media screen and (min-width: $query__large) {
+            margin: inherit; 
+        }
+        img {
+            @media screen and (min-width: $query__small) {
+                width: 50%;
+            }
+            
+            @media screen and (min-width: $query__large) {
+                width: 40%;
+            }
+        }
+        
+        &.phone-icon,
+        &.map {
+            img {
+                
+                @media screen and (min-width: $query__small) {
+                    width: 50%;
+                }
+                
+                @media screen and (min-width: $query__medium) {
+                    width: 33%;
+                }
+                
+                @media screen and (min-width: $query__large) {
+                    width: 25%;
+                }
+            }
+        }
+    }
+    
+    .contact_icon_info_div {
+        width: 100%;
+        text-align: center;
+        font-size: 1.25em;
+        font-weight: bold;
+        
+        @media screen and (min-width: $query__medium) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .social_media_menu {
+            padding: 0;
+        }
+        
+        .social_media_menu li {
+            display: inline;
+            
+            img {
+                @media screen and (min-width: $query__small) {
+                    width: 15%;
+                }
+                
+                @media screen and (min-width: $query__large) {
+                    width: 10%;
+                }
+            }
+        }
+    }
+}
+
+.contact_form {
+    .text-input-div {
+        @media screen and (min-width: $query__small){
+            padding: 0 1em;
+        }
+        
+        @media screen and (min-width: $query__medium) {
+            padding: 0;
+        }
+        .text-inputs {
+            padding-bottom: 2%;
+            input {
+                width: 100%;
+                height: 1.75em;
+            }
+            
+            @media screen and (min-width: $query__small) {
+                width: 90%;
+                margin: 0 auto;
+            }
+            
+            @media screen and (min-width: $query__medium) {
+                width: 48%;
+                float: left;
+            }
+            
+            &.phone-contact, &.companyname-contact {
+                @media screen and (min-width: $query__medium){
+                    padding-left: 2.5%;
+                }
+            }
+        }
+    }
+    
+    .textarea-div {
+        
+        @media screen and (min-width: $query__small) {
+            width: 94%;
+            padding-left: 1em;
+        }
+        
+        @media screen and (min-width: $query__medium) {
+            width: 100%;
+            float: left;
+            padding: 0;
+        }
+        
+        textarea {
+            height: 10em;
+            margin: 0 auto;
+            @media screen and (min-width: $query__small) {
+                width: 97%;
+            }
+            
+            @media screen and (min-width: $query__medium) {
+                width: 100%;
+            }
+        }
+    }
+    
+    button {
+        @media screen and (min-width: $query__small) {
+            width: 90%;
+            margin: 1em;
+            padding: 1% 5%;
+        }
+        
+        @media screen and (min-width: $query__medium) {
+            padding: 0.5em 3em;
+            margin: 1em auto;
+            float: right;
+            width: 40%;
+        }
+        
+        @media screen and (min-width: $query__large) {
+            width: 25%;
+        }
+    }
+}

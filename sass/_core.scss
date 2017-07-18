@@ -1,0 +1,320 @@
+h1, h2, h3, h4, h5, h6 {
+	margin-top: .75em;
+	margin-bottom: .25em;
+	font-family: $poppins;
+	clear: both;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.6em;
+}
+
+h3 {
+	font-size: 2.2em;
+}
+
+h4 {
+	font-size: 2em;
+}
+
+h5 {
+	font-size: 1.8em;
+}
+
+h6 {
+	font-size: 1.6em;
+}
+
+h1 {
+	color: $purple;
+	font-family: $poppins;
+	font-size: 58px;
+	font-weight: 700;
+	letter-spacing: -.05em;
+	line-height: 70px;
+	@media only screen and (max-width: 600px) {
+		font-size: 48px;
+		line-height: 55px;
+	}
+}
+
+h2 {
+	color: $black;
+	font-family: $poppins;
+	font-size: 40px;
+	font-weight: 700; 
+        letter-spacing: -.05em;
+	line-height: 48px;
+}
+
+h3 {
+	color: $grey;
+	font-family: $open;
+	font-size: 25px;
+	font-weight: 300;
+	letter-spacing: .3em;
+	line-height: 37px;
+	text-transform: uppercase;
+	@media only screen and (max-width: 600px) {
+		font-size: 23px;
+		line-height: 33px;
+	}
+}
+
+h4 {
+	color: $black;
+	font-family: $poppins;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: -.05em;
+	line-height: 30px;
+}
+
+h5 {
+	color: $blue;
+	font-family: $open;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: .3em;
+	line-height: 28px;
+	text-transform: uppercase;
+}
+
+h6 {
+	color: $black;
+	font-family: $poppins;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: -.05em;
+	line-height: 24px;
+}
+
+h1 + h2 {
+	margin-top: -0.5em;
+}
+
+h1 + h3 {
+	margin-top: -0.6em;
+}
+
+h1 + h4 {
+	margin-top: -0.8em;
+}
+
+h1 + h5 {
+	margin-top: -0.9em;
+}
+
+h1 + h6 {
+	margin-top: -1em;
+}
+
+h2 + h3 {
+	margin-top: -0.8em;
+}
+
+h2 + h4 {
+	margin-top: -1em;
+}
+
+h2 + h5 {
+	margin-top: -1.2em;
+}
+
+h2 + h6 {
+	margin-top: -1.4em;
+}
+
+h3 + h4 {
+	margin-top: -0.8em;
+}
+
+h3 + h5 {
+	margin-top: -1.1em;
+}
+
+h3 + h6 {
+	margin-top: -1.2em;
+}
+
+h4 + h5{
+	margin-top: -1.2em;
+}
+
+h4 + h6 {
+	margin-top: -1.4em;
+}
+
+h5 + h6{
+	margin-top: -1.5em;
+}
+
+.entry-title {
+	display: none;
+}
+
+.content {
+    @include center-block;
+}
+
+.column {
+    @include column;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p { 
+    color: $black;
+    font-family: $poppins; 
+    font-size: 16px; 
+    font-weight: 300; 
+    line-height: 1.5; 
+    margin: 0 0 1.5em;
+} 
+a { 
+    color: $blue; 
+    font-weight: 600; 
+    text-decoration: none;
+    
+    // smooth transition 
+    transition: all 0.5s ease; 
+    -webkit-transition: all 0.5s ease; 
+    -moz-transition: all 0.5s ease; 
+    -o-transition: all 0.5s ease; 
+    &:hover { 
+               color: $black; 
+    }
+} 
+strong { 
+    font-weight: 700; 
+} 
+button, .button { 
+    border: 5px solid; 
+    color: $grey; 
+    font-family: $open; 
+    font-size: 18px; 
+    font-weight: 400; 
+    letter-spacing: .3em; 
+    padding: 30px 70px; 
+    text-transform: uppercase; 
+    @media only screen and (max-width: 600px) { 
+        font-size: 16px 
+    } 
+    &.purple { 
+        background-color: $purple; 
+        border-color: $purple; 
+        &:hover { 
+           color: $purple;   
+           // except for when on a dark background like the homepage then it will be white 
+        } 
+    } 
+    &.pink {
+        background-color: $pink; 
+        border-color: $pink; 
+        &:hover { 
+           color: $pink;   
+           // except for when on a dark background like the homepage then it will be white 
+        } 
+    } 
+    &:hover { 
+        background-color: #fff; 
+    } 
+}
+
+/*
+blockquote { 
+    border: 5px solid $blue; 
+    border-radius: 5px; 
+    color: $purple;          
+    font-family: $poppins; 
+    font-size: 25px; 
+    font-weight: 700; 
+    letter-spacing: -.05em; 
+    line-height: 38px;  
+    padding: 55px 50px; 
+} 
+blockquote .title { 
+    color: $black; 
+    font-family: $poppins; 
+    font-size: 22px; 
+    font-weight: 700; 
+    letter-spacing: -.05em; 
+    line-height: 30px; 
+    //same as h4 styles 
+}
+
+ul {
+    list-style-type: none;
+    list-style: none;
+}
+
+ul li { 
+    color: $black; 
+    font-family: $poppins; 
+    font-size: 16px; 
+    font-weight: 300;
+    line-height: 1.5;        
+    list-style-type: none; 
+    padding-bottom: 10px; 
+    padding-left: 10px; 
+    position: relative;
+    
+    &:before { 
+         background-color: $blue; 
+         border-radius: 100px; 
+         content: '';   
+         height: 8px;   
+         left: 10px;   
+         margin-left: -1.25rem; 
+         position: absolute;   
+         top: 8px;   
+         width: 8px;   
+    }
+} 
+ol { 
+counter-reset: li; 
+list-style: none; 
+*list-style: decimal; 
+    li { 
+         color: $black; 
+         font-family: $poppins; 
+         font-size: 16px; 
+         font-weight: 300; 
+         line-height: 1.5; 
+         position: relative; 
+         &:before { 
+                    color: $purple;                                
+                    Content: counter(li); 
+                    Counter-increment: li; 
+                    font-family: $poppins; 
+                    font-size: 18px; 
+                    font-weight: 700; 
+                    left: 0;                                  
+                    margin-left: -0.5rem; 
+                    padding-right:10px; 
+                    top: 0; 
+         } 
+    } 
+} 
+form { 
+    label { 
+         color: $black; 
+         font-family: $poppins; 
+         font-size: 18px; 
+         font-weight: 300; 
+    } 
+    input { 
+         color: $black; 
+         border: 1px solid $grey; 
+         font-family: $poppins; 
+         font-size: 16px; 
+         font-weight: 300; 
+    } 
+}
+*/
